@@ -1,0 +1,217 @@
+[
+  {
+    "menuNm": "샘플",
+    "child": [
+      {
+        "menuNm": "샘플프로그램",
+        "child": [
+          {
+            "menuNm": "폼-그리드(싱글파일)",
+            "programUrl": "@/views-sample/sample/form-grid/FormGrid.vue",
+            "selectYn": "1",
+            "insertYn": "1",
+            "deleteYn": "1",
+            "updateYn": "1",
+            "btn01": "1",
+            "pSelectYn": "1",
+            "pInsertYn": "1",
+            "pDeleteYn": "1",
+            "pUpdateYn": "1",
+            "pBtn01Yn": "1",
+            "pBtn01Txt": "추가버튼1"
+          },
+          {
+            "menuNm": "폼-그리드-vm",
+            "programUrl": "@/views-sample/sample/form-grid-vm/FormGridVm.vue",
+            "selectYn": "1",
+            "insertYn": "1",
+            "deleteYn": "1",
+            "updateYn": "1",
+            "btn01": "1",
+            "pSelectYn": "1",
+            "pInsertYn": "1",
+            "pDeleteYn": "1",
+            "pUpdateYn": "1",
+            "pBtn01Yn": "1",
+            "pBtn01Txt": "추가버튼1"
+          },
+          {
+            "menuNm": "폼-그리드-use",
+            "programUrl": "@/views-sample/sample/form-grid-use/FormGridUse.vue",
+            "selectYn": "1",
+            "insertYn": "1",
+            "deleteYn": "1",
+            "updateYn": "1",
+            "btn01": "1",
+            "pSelectYn": "1",
+            "pInsertYn": "1",
+            "pDeleteYn": "1",
+            "pUpdateYn": "1",
+            "pBtn01Yn": "1",
+            "pBtn01Txt": "추가버튼1"
+          }
+        ]
+      },
+      {
+        "menuNm": "컴포넌트",
+        "child": [
+          {
+            "menuNm": "컴포넌트 작성",
+            "programUrl": "@/views-sample/component/vmDocComponent.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "VmCheckbox",
+            "programUrl": "@/views-sample/component/VmCheckboxSample.vue"
+          },
+          {
+            "menuNm": "VmRadio",
+            "programUrl": "@/views-sample/component/VmRadioSample.vue"
+          },
+          {
+            "menuNm": "VmCombo",
+            "programUrl": "@/views-sample/component/VmComboSample.vue"
+          },
+          {
+            "menuNm": "VmGrid",
+            "programUrl": "@/views-sample/component/VmGridSample.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "vm-grid-column",
+            "programUrl": "@/views-sample/component/VmGridColumnSample.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "alert & confirm",
+            "programUrl": "@/views-sample/component/AlertConfirmSample.vue"
+          }
+        ]
+      },
+      {
+        "menuNm": "레이아웃",
+        "child": [
+          {
+            "menuNm": "위:고정 아래:유동",
+            "programUrl": "@/views-sample/arrange/TopFixDownFlex.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          },
+          {
+            "menuNm": "위:고정 중간:유동 아래:고정",
+            "programUrl": "@/views-sample/arrange/TopFixMiddleFlexDownFix.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          },
+          {
+            "menuNm": "위:고정 중간-그리드2개 상하:유동 아래:고정",
+            "programUrl": "@/views-sample/arrange/TopFixMiddleGrid2UpDownFlexDownFix.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          },
+          {
+            "menuNm": "위:고정 중간-그리드2개 좌우:유동 아래:고정",
+            "programUrl": "@/views-sample/arrange/TopFixMiddleGrid2LeftRightFlexDownFix.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          },
+          {
+            "menuNm": "위:고정 아래:[유동 좌:고정 우:유동]",
+            "programUrl": "@/views-sample/arrange/TopFixDownFlexLeftFixRightFlex.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          },
+          {
+            "menuNm": "위:고정 아래:[유동 좌:고정 우:[상:고정 하:유동]]",
+            "programUrl": "@/views-sample/arrange/TopFixDownFlexLeftFixRightUpFixDownFlex.vue",
+            "selectYn": "1",
+            "pSelectYn": "1"
+          }
+        ]
+      },
+      {
+        "menuNm": "use Hook",
+        "child": [
+          {
+            "menuNm": "useVm",
+            "programUrl": "@/views-sample/hook/UseVmSample.vue"
+          },
+          {
+            "menuNm": "useCodeName",
+            "programUrl": "@/views-sample/hook/UseCodeNameSample.vue"
+          }
+        ]
+      },
+      {
+        "menuNm": "Playground",
+        "child": [
+          {
+            "menuNm": "Sample",
+            "programUrl": "@/views-sample/playground/SampleTest1.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "Ref & Reactive",
+            "programUrl": "@/views-sample/playground/RefReactiveTest.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "Promise test",
+            "programUrl": "@/views-sample/playground/PromiseTest.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "jquery test",
+            "programUrl": "@/views-sample/playground/JqueryTest.vue",
+            "selectYn": "1"
+          },
+          {
+            "menuNm": "upload test",
+            "programUrl": "@/views-sample/playground/UploadTest.vue",
+            "pSelectYn": "1",
+            "pInsertYn": "1",
+            "pDeleteYn": "1",
+            "pUpdateYn": "1",
+            "selectYn": "1",
+            "insertYn": "1",
+            "deleteYn": "1",
+            "updateYn": "1"
+          },
+          {
+            "menuNm": "그리드-폼-바인딩",
+            "programUrl": "@/views-sample/playground/grid-form-binding/GridFormBinding.vue",
+            "selectYn": "1",
+            "insertYn": "1",
+            "deleteYn": "1",
+            "updateYn": "1",
+            "btn01": "1",
+            "pSelectYn": "1",
+            "pInsertYn": "1",
+            "pDeleteYn": "1",
+            "pUpdateYn": "1",
+            "pBtn01Yn": "1",
+            "pBtn01Txt": "추가버튼1"
+          }
+        ]
+      },
+      {
+        "menuNm": "Popup",
+        "child": [
+          {
+            "menuNm": "sample",
+            "programUrl": "@/views-sample/popup/user-search-sample-popup/UserSearchSamplePopup.vue",
+            "selectYn": "1"
+          }
+        ]
+      },
+      {
+        "menuNm": "컴포넌트 등록",
+        "programUrl": "@/views-sample/setup/RegistComponent.vue"
+      },      
+      {
+        "menuNm": "date-picker",
+        "programUrl": "@/views-sample/date-picker.vue"
+      }        
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    // 여기까지 vite 기본 설치값
+    /////////////////////////
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    // "types": [
+    //   // "vite/client", // ImportMeta 사용
+    //   "node"
+    // ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  // "exclude": [
+  //   "node_modules",
+  //   "**/node_modules/*",
+  //   "wijmo",
+  // ],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue" ]
+  }
+  

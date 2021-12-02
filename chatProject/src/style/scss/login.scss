@@ -1,0 +1,112 @@
+@import './_common.scss';
+@import './_auth.scss';
+
+.wrap {
+  @include auth-wrap;
+}
+
+.login {
+  @include auth-main;
+  width:100%;
+  height:100%;
+  max-width:px(450);
+  max-height:px(661);
+  padding:0 px(40);
+
+  &__area {
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  &__logo {
+    margin-top:px(110);
+  }
+
+  &__form {
+    display:flex;
+    width:100%;
+    margin-top:px(100);
+    flex-direction:column;
+
+    &-input {
+      width:100%;
+      height:px(50);
+      padding:px(20);
+      border:px(1) solid #c5cfd8;
+      border-radius:px(3);
+
+      &:first-of-type {
+        margin-bottom:px(10);
+      }
+
+      &::placeholder {
+        font-size:px(14);
+        color:#999;
+      }
+    }
+  }
+
+  &__other-area {
+    display:flex;
+    margin-top:px(20);
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  &__keep-id-label {
+    display:flex;
+    color:#15232e;
+    align-items:center;
+
+    &:before {
+      @include checkbox-off(left);
+    }
+  }
+
+  &__keep-id-checkbox:checked + &__keep-id-label:before {
+    @include checkbox-on;
+  }
+
+  &__keep-id-text {
+    font-size:px(13);
+  }
+
+  &__find-list-area {
+    display:flex;
+  }
+
+  &__find-list {
+    margin-right:px(12);
+    
+    &:last-child {
+      margin-right:0;
+    }
+
+    &-link {
+      display:block;
+      font-size:px(13);
+      color:#8e8e8e;
+    }
+  }
+
+  &__button {
+    display:flex;
+    width:100%;
+    height:px(56);
+    margin-top:px(50);
+    border:px(1) solid #0d46a0;
+    border-radius:px(3);
+    background-color:#2961ff;
+    font-weight:bold;
+    font-size:px(16);
+    color:#fff;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  @at-root .auth-copyright {
+    @include auth-copyright;
+  }
+}

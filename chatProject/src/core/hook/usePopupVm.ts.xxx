@@ -1,0 +1,43 @@
+import { useAuth, useEventListener, useMenu } from '@/core'
+import { getCurrentInstance, inject, onBeforeMount, onBeforeUnmount, onBeforeUpdate, onErrorCaptured, onMounted, onRenderTracked, onRenderTriggered, onUnmounted, onUpdated, provide, unref } from "vue"
+import { VmController } from '../types'
+import { openInVsCode } from "../util/openInVsCode"
+import { usePopupOption } from './useModalOption'
+import { useVm } from './useVm'
+
+
+const loggingVmHook = true
+export function usePopupVm<T>(): T & VmController {
+
+  const instance = getCurrentInstance()!
+  const app = instance.appContext
+  const { user } = useAuth()
+  const vm = useVm<T>()
+  console.log('usePopupVm. vm=', vm);
+
+  onMounted(() => {
+    if (import.meta.env.MODE === 'development') {
+      if (loggingVmHook ) console.log('usePopupVm mounted');
+      
+      const { name, __file: file } = instance.type
+      const popupOption = usePopupOption(name!)
+      if (popupOption) {
+        const el = instance.vnode.el as HTMLElement
+        const mc = el.closest('.modal-container')
+        const dubugSpan = document.createElement('span')
+        dubugSpan.style.position = 'absolute'
+        dubugSpan.style.cursor = 'pointer'
+        dubugSpan.style.bottom = '43px'
+        dubugSpan.style.backgroundColor = 'yellow'
+        dubugSpan.style.height = '30px'
+        useEventListener(dubugSpan, 'click', () => {
+          openInVsCode(file)
+        }, { desc: '소스 열기 클릭' })
+        dubugSpan.textContent = name + ' : ' + file + '  [열기]'
+        mc?.append(dubugSpan)
+      }
+    }
+  })
+
+  return vm
+}

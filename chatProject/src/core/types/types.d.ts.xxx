@@ -1,0 +1,19 @@
+
+// declare interface ComboState {
+//   options: Array<CodeNameItem>
+//   selectedItem: object | undefined
+//   selectedCode: string,
+//   selectedName: string,
+//   innerModelValue: string | null
+// }
+
+
+
+// declare interface PopupHeaderButton {
+//   type?: PopupButtonType
+//   text?: string
+//   fn?: Function
+//   cssClass?: string
+//   disabledName?: string
+//   disabled: Ref<boolean>
+// }

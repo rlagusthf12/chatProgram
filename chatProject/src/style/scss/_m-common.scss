@@ -1,0 +1,73 @@
+@import './_reset.scss';
+
+@function px($size) { // px사이즈를 입력하면 rem으로 변환
+  @return #{($size / 16)}rem;
+}
+
+.wrap {
+  display:flex;
+  overflow:hidden;
+  width:100%;
+  height:100vh;
+  position:relative;
+  flex-direction:column;
+}
+
+.header {
+  display:flex;
+  width:100%;
+  height:px(60);
+  background-color:#fff;
+  align-items:center;
+
+  &__inner {
+    display:flex;
+    position:relative;
+    width:100%;
+    padding:0 px(16);
+    align-items:center;
+    justify-content:space-between;
+
+    &--popup {
+      justify-content:center;
+    }
+  }
+
+  &__title {
+    font-weight:bold;
+    font-size:px(20);
+  }
+
+  &__button-list-area {
+    display:flex;
+  }
+
+  &__button {
+    & ~ & {
+      margin-left:px(16);
+    }
+  }
+
+  @mixin headerButton {
+    position:absolute;
+    width:px(24);
+    height:px(24);
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+  &__close-button {
+    @include headerButton;
+    left:px(16);
+  }
+
+  &__menu-button {
+    @include headerButton;
+    right:px(16);
+  }
+
+  &__user-count {
+    font-weight:400;
+    color:#444;
+  }
+}

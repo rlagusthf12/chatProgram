@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "vmerp.jwt.secret",
+    "type": "java.lang.String",
+    "description": "로그인시 토큰을 생성할때의 암호화키. 서버별로 다르게 지정."
+  },
+  {
+    "name": "vmerp.jwt.header",
+    "type": "java.lang.String",
+    "description": "request header에서 토큰을 저장할 이름."
+  },
+  {
+    "name": "vmerp.jwt.scheme",
+    "type": "java.lang.String",
+    "description": "request header에서 토큰값 앞에 붙는 접두어"
+  },
+  {
+    "name": "vmerp.jwt.access-expiration",
+    "type": "java.lang.String",
+    "description": "토큰 만료 시간"
+  },
+  {
+    "name": "jwt",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt'"
+  }
+]}

@@ -1,0 +1,21 @@
+#jwt:
+#  secret: youcantrevealthesecretkey1234012300040
+
+
+server:
+  port: 8080
+  error:
+    include-stacktrace: never # When to include a "stacktrace" attribute.
+    whitelabel.enabled: false # Enable the default error page displayed in browsers in case of a server error.
+  servlet:
+    session:
+      timeout: 86400 # Session timeout in seconds.(24h)  SessionListener에서 사용
+      tracking-modes: cookie # Session tracking modes (one or more of the following: "cookie", "url", "ssl").
+  tomcat:
+    connection-timeout: 600000  #600초 10분  스크래핑 10초
+    max-http-form-post-size: -1 # 기본 2MB, 0이하면 무제한. 스크래핑용.   
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://hyeonsol:1111@cluster0.wqkrz.mongodb.net/message?retryWrites=true&w=majority
+

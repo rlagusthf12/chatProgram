@@ -1,0 +1,53 @@
+@mixin auth-wrap {
+  display:flex;
+  width:100%;
+  height:100vh;
+  padding:px(50) 0 px(70);
+  align-items:center;
+  justify-content:center;
+  background-color:#e5e5e5;
+}
+
+@mixin auth-main { // login, find, join 등 페이지의 하얀 박스 영역에서 사용
+  display:flex;
+  overflow:hidden;
+  overflow-y:auto;
+  border-radius:px(8);
+  background-color:#fff;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 px(16) px(16) rgba(21, 34, 50, 0.08);
+}
+
+@mixin auth-area {
+  display:flex;
+  width:100%;
+  flex-direction:column;
+  align-items:center;
+}
+
+@mixin auth-copyright($margin-bottom: 20) {
+  margin-bottom:px($margin-bottom);
+  font-weight:bold;
+  font-size:px(11);
+  color:#999;
+}
+
+@mixin checkbox-off($direction) {
+  content:'';
+  display:inline-block;
+  width:px(16);
+  height:px(16);
+  @if $direction == left {
+    margin-right:px(7);
+  } @else if $direction == right {
+    margin-left:px(8);
+  }
+  background-image:url(/images/pc/checkbox-off.svg);
+  background-repeat:no-repeat;
+}
+
+@mixin checkbox-on {
+  background-image:url(/images/pc/checkbox-on.svg);
+}
